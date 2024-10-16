@@ -7,24 +7,56 @@
   <link rel="stylesheet" href="style.css">                 
 </head>
 <body>
-  <header class="header">
-    <a href="#" class="logo"><span>Aka</span>chi</a>
-    <div class="nav">
-      <a href="javascipt:void(0);" class="toggle">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
-      <nav class="navbar">
-        <a href="#summary">Summary</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-      </nav>
+<!--  <header class="header">-->
+<!--    <a href="#" class="logo"><span>Aka</span>chi</a>-->
+<!--    <div class="nav">-->
+<!--      <a href="javascipt:void(0);" class="toggle">-->
+<!--        <span class="bar"></span>-->
+<!--        <span class="bar"></span>-->
+<!--        <span class="bar"></span>-->
+<!--      </a>-->
+<!--      <nav class="navbar">-->
+<!--        <a href="#summary">Summary</a>-->
+<!--        <a href="#skills">Skills</a>-->
+<!--        <a href="#projects">Projects</a>-->
+<!--        <a href="#experience">Experience</a>-->
+<!--        <a href="#education">Education</a>-->
+<!--      </nav>-->
+<!--    </div>-->
+<!--    <a href="#contact" class="contact">Contact Me</a>-->
+<!--  </header>-->
+
+<nav class="header">
+  <a href="#" class="logo"><span>Aka</span>chi</a>
+  <button class="nav-toggle">
+  <div class="nav-center">
+    <!-- nav header -->
+    <div class="nav-header">
+
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
-    <a href="#contact" class="contact">Contact Me</a>
-  </header>
+    <!-- links -->
+    <ul class="links ">
+      <li>
+        <a href="#summary">summary</a>
+      </li>
+      <li>
+        <a href="#skills">skills</a>
+      </li>
+      <li>
+        <a href="#projects">projects</a>
+      </li>
+      <li>
+        <a href="#education">education</a>
+      </li>
+      <li>
+        <a href="#experience">experience</a>
+      </li>
+    </ul>
+  </div>
+  <a href="#contact" class="contact">Contact Me</a>
+</nav>
 
   <main>
     <section id="summary">
@@ -46,27 +78,59 @@
     <div class="portfolio">
       <section id="skills" class="portfolio-section">
         <h2>Skills</h2>
-        <ul>
-          <li>Strong organizational and time management skills</li>
-          <li>Ability to work independently and as part of a team</li>
-          <li>Programming Languages: Python, HTML,
-            CSS, JavaScript</li>
-          <li>Version Control: Git, GitHub</li>
-          <li>Basic understanding of AI concepts and
-            it's application in the career world<li>
-        </ul>
+        <div class="skills-list">
+          <ul>
+            <li>Strong organizational and time management skills</li>
+            <li>Ability to work independently and as part of a team</li>
+            <li>Programming Languages: Python, HTML,
+              CSS, JavaScript</li>
+            <li>Version Control: Git, GitHub</li>
+            <li>Basic understanding of AI concepts and
+              it's application in the career world<li>
+          </ul>
+        </div>
       </section>
 
       <section id="projects" class="portfolio-section">
         <h2>Projects</h2>
-        <div class="project-card">
-          <img src="CodeSensAI.PNG" alt="project1">
-          <div>
-            <h3>CodeSensAI</h3>
-            <p>CodeSensAI is a co-developed AI-powered educational app,currently in the ideation phase, designed to introduce young girls to technology through gamified learning. Inspired by Duolingo, it offers personalized modules that make tech concepts engaging and accessible, aiming to spark early interest and empower future female tech leaders.</p>
-            <a href="#">View Project</a>
-          </div>
-        </div>
+       <div class="slider">
+         <div class="project-container">
+           <div class="project-card">
+             <img src="CodeSensAI.PNG" alt="project1">
+             <div class="project-info">
+               <h3>CodeSensAI</h3>
+               <p>CodeSensAI is a co-developed AI-powered educational app,currently in the ideation phase, designed to introduce young girls to technology through gamified learning. Inspired by Duolingo, it offers personalized modules that make tech concepts engaging and accessible, aiming to spark early interest and empower future female tech leaders.</p>
+               <a href="#">View Project</a>
+             </div>
+           </div>
+           <div class="project-card">
+             <img src="Moving%20button.PNG" alt="project2">
+             <div class="project-info">
+               <h3>Moving Button</h3>
+               <p>A playful and interactive webpage where a button moves away when users try to click it, creating a fun challenge. This project demonstrates creative use of JavaScript for animations and dynamic positioning, making for an engaging user experience. Tech Stack: HTML, CSS,JavaScript..</p>
+               <a href="#">View Project</a>
+             </div>
+           </div>
+           <div class="project-card">
+             <img src="climateframed.PNG" alt="project3">
+             <div class="project-info">
+               <h3>ClimateFramed</h3>
+               <p>A project aimed at addressing climate challenges through innovative solutions, possibly utilizing data visualization, environmental tracking, or awareness platforms. Tech Stack: JavaScript, Python,DataAPIs.</p>
+               <a href="#">View Project</a>
+             </div>
+           </div>
+           <div class="project-card">
+             <img src="linkree%20project.PNG" alt="project4">
+             <div class="project-info">
+               <h3>Linktree</h3>
+               <p>A simple, responsive Link Tree-style webpage that allows users to consolidate and organize multiple important links in one place. It features a clean design with clickable buttons for easy navigation to social profiles, websites, and other resources. Tech Stack: HTML, CSS.</p>
+               <a href="#">View Project</a>
+             </div>
+           </div>
+         </div>
+         <button class="prev" onclick="slidePrev()">&#10094;</button>
+         <button class="next" onclick="slideNext()">&#10095;</button>
+       </div>
       </section>
 
       <section id="experience" class="portfolio-section">

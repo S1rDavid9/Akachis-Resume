@@ -12,36 +12,50 @@ document.querySelector(".resume-button").addEventListener("click", function (eve
   }, 500);
 })
 
-// Function to add visible 'class' when sections come into view
-function revealSections(){
-  const sections = document.querySelectorAll('.portfolio-section');
 
-  sections.forEach(section => {
-    const sectionTop = section.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
-
-    // Add the 'visible' class if the section is in viewport
-    if (sectionTop < windowHeight - 100) {
-        section.classList.add('visible');
-    }
-  });
-}
-
-window.addEventListener('scroll', revealSections);
-document.addEventListener('DOMContentLoaded', revealSections);
-
-// Rearrange sections for mobile devices
-function rearrangeSections(){
-  const portfolio = document.querySelectorAll('.portfolio');
-  const projects = document.querySelectorAll('#project');
-}
-
-window.addEventListener('resize', rearrangeSections);
-document.addEventListener('DOMContentLoaded', rearrangeSections);
 
 // Toggle the visibility of the navbar links
-const toggleButton = document.querySelector('.toggle');
-const navbarButton = document.querySelector('.navbar');
-toggleButton.addEventListener('click', () => {
-  navbarButton.classList.toggle('active');
-})
+// const toggleButton = document.querySelector('.toggle');
+// const navbarButton = document.querySelector('.navbar');
+// toggleButton.addEventListener('click', function()  {
+//   navbarButton.classList.toggle('active');
+// })
+
+const navToggle = document.querySelector(".nav-toggle")
+const links = document.querySelector(".links");
+
+navToggle.addEventListener('click', function() {
+  // if(links.classlist.contains('show-links')){
+  //     links.classList.remove('show-links')
+  // } else{
+  //     links.classList.add('show-links')
+  // }
+  links.classList.toggle("show-links");
+} );
+
+let currentIndex = 0;
+const slides = document.querySelectorAll('.project-card');
+const totalSlides = slides.length;
+
+function slideNext() {
+  if (currentIndex < totalSlides - 1) {
+    currentIndex++;
+  } else {
+    currentIndex = 0; // Loop back to the first slide
+  }
+  updateSlidePosition();
+}
+
+function slidePrev() {
+  if (currentIndex > 0) {
+    currentIndex--;
+  } else {
+    currentIndex = totalSlides - 1; // Loop back to the last slide
+  }
+  updateSlidePosition();
+}
+
+function updateSlidePosition() {
+  const sliderContainer = document.querySelector('.project-container');
+  sliderContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
