@@ -63,10 +63,57 @@ Variables
     list-style: none;
 }
 
-body{
+body, html{
     transition: opacity 0.5s ease-in-out;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Small devices (phones, 320px and up) */
+@media (min-width: 320px) and (max-width: 479px) {
+    body {
+        font-size: 14px; /* Smaller text for smaller screens */
+    }
+
+    .portfolio {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+}
+
+/* Medium devices (tablets, 480px and up) */
+@media (min-width: 480px) and (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+
+    .portfolio {
+        padding: 15px;
+    }
+}
+
+/* Large devices (small laptops, 768px and up) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+
+    .portfolio {
+        padding: 20px;
+    }
+}
+
+/* Extra large devices (desktops, 1025px and up) */
+@media (min-width: 1025px) {
+    body {
+        font-size: 20px;
+    }
+
+    .portfolio {
+        padding: 30px;
+    }
+}
 body.fade-out{
     opacity: 0;
 }
