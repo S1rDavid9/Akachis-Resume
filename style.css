@@ -501,3 +501,53 @@ span{
     padding: 10px;
 }
 
+#contact h2{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+#contact form{
+    max-width: 50em;
+    text-align: center;
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+}
+
+#contact form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#contact form .input-box input,
+#contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 16px;
+    color: black;
+    background: white;
+    border-radius: 0.8rem;
+    margin: 1rem 0;
+    resize: none;
+}
+
+.send{
+    padding: 10px 15px;
+    margin: 10px auto;
+    border: 2px solid transparent;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background: black;
+    font-weight: 600;
+}
+
+.send:hover{
+    background-color: #055e0c;
+    color: white;
+    border: 2px solid white;
+}

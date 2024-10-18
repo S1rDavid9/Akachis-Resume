@@ -180,13 +180,18 @@
     </div>
 
     <section id="contact">
-      <h2>Contact</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <button type="submit">Submit</button>
+      <h2>Contact <span>Me</span></h2>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name">
+          <input type="email" placeholder="Email">
+        </div>
+        <div class="input-box">
+          <input type="number" placeholder="Phone Number">
+          <input type="text" placeholder="Subject">
+        </div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send Message" class="send">
       </form>
     </section>
   </main>
