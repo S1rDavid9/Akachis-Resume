@@ -432,7 +432,7 @@ span{
 .project-card img {
     max-width: 1200px;
     width: 100%;
-    height: auto;
+    height: 500px;
     border-radius: 10px;
 }
 
@@ -447,9 +447,14 @@ span{
 
 .project-info h3 {
     color: #055e0c;
-    font-size: 30px;
+    font-size: 25px;
+    font-weight: 800;
 }
 
+#projects h2 {
+    padding: 20px;
+    font-size: 36px;
+}
 .project-info p {
     padding: 30px;
     font-weight: 600}
