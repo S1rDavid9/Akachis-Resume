@@ -59,3 +59,31 @@ function updateSlidePosition() {
   const sliderContainer = document.querySelector('.project-container');
   sliderContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
+
+// Select the form element
+const contactForm = document.querySelector('form');
+
+// Add event listener for form submission
+contactForm.addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent the default form submission
+
+  // Get form values
+  const fullName = contactForm.querySelector('input[placeholder="Full Name"]').value;
+  const email = contactForm.querySelector('input[placeholder="Email"]').value;
+  const phoneNumber = contactForm.querySelector('input[placeholder="Phone Number"]').value;
+  const subject = contactForm.querySelector('input[placeholder="Subject"]').value;
+  const message = contactForm.querySelector('textarea').value;
+
+  // Log the form data (You can replace this with sending the data to a server or email service)
+  console.log('Full Name:', fullName);
+  console.log('Email:', email);
+  console.log('Phone Number:', phoneNumber);
+  console.log('Subject:', subject);
+  console.log('Message:', message);
+
+  // Simulate a message being sent
+  alert("Your message has been sent!");
+
+  // Optionally, you can clear the form after submission
+  contactForm.reset();
+});

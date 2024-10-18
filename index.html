@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Akachi's Resume Portfolio</title>
-  <link rel="stylesheet" href="style.css">                 
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 <!--  <header class="header">-->
@@ -74,6 +75,55 @@
         </div>
       </div>
     </section>
+    <section id="projects" class="portfolio-section">
+      <h2>Projects</h2>
+      <div class="slider">
+        <div class="project-container">
+          <div class="project-card">
+            <img src="CodeSensAI.PNG" alt="project1">
+            <div class="project-info">
+              <h3>CodeSensAI</h3>
+              <p>CodeSensAI is a co-developed AI-powered educational app,currently in the ideation phase, designed to introduce young girls to technology through gamified learning. Inspired by Duolingo, it offers personalized modules that make tech concepts engaging and accessible, aiming to spark early interest and empower future female tech leaders.</p>
+              <a href="#">View Project</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="Moving%20button.PNG" alt="project2">
+            <div class="project-info">
+              <h3>Moving Button</h3>
+              <p>A playful and interactive webpage where a button moves away when users try to click it, creating a fun challenge. This project demonstrates creative use of JavaScript for animations and dynamic positioning, making for an engaging user experience. Tech Stack: HTML, CSS,JavaScript..</p>
+              <a href="#">View Project</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="climateframed.PNG" alt="project3">
+            <div class="project-info">
+              <h3>ClimateFramed</h3>
+              <p>A project aimed at addressing climate challenges through innovative solutions, possibly utilizing data visualization, environmental tracking, or awareness platforms. Tech Stack: JavaScript, Python,DataAPIs.</p>
+              <a href="#">View Project</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="linkree%20project.PNG" alt="project4">
+            <div class="project-info">
+              <h3>Linktree</h3>
+              <p>A simple, responsive Link Tree-style webpage that allows users to consolidate and organize multiple important links in one place. It features a clean design with clickable buttons for easy navigation to social profiles, websites, and other resources. Tech Stack: HTML, CSS.</p>
+              <a href="#">View Project</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="gradebook%20app.PNG" alt="project5">
+            <div class="project-info">
+              <h3>Gradebook App</h3>
+              <p>The Grade Book app is a student records management system designed to streamline the process of course registration, GPA calculation, and transcript generation. Built using Python, the app allows educators to efficiently track student progress, manage course records, and generate accurate academic transcripts. Its simple file storage system ensures ease of use while maintaining reliable data management for schools and institutions.</p>
+              <a href="#">View Project</a>
+            </div>
+          </div>
+        </div>
+        <button class="prev" onclick="slidePrev()">&#10094;</button>
+        <button class="next" onclick="slideNext()">&#10095;</button>
+      </div>
+    </section>
 
     <div class="portfolio">
       <section id="skills" class="portfolio-section">
@@ -90,57 +140,6 @@
           </ul>
         </div>
       </section>
-
-      <section id="projects" class="portfolio-section">
-        <h2>Projects</h2>
-       <div class="slider">
-         <div class="project-container">
-           <div class="project-card">
-             <img src="CodeSensAI.PNG" alt="project1">
-             <div class="project-info">
-               <h3>CodeSensAI</h3>
-               <p>CodeSensAI is a co-developed AI-powered educational app,currently in the ideation phase, designed to introduce young girls to technology through gamified learning. Inspired by Duolingo, it offers personalized modules that make tech concepts engaging and accessible, aiming to spark early interest and empower future female tech leaders.</p>
-               <a href="#">View Project</a>
-             </div>
-           </div>
-           <div class="project-card">
-             <img src="Moving%20button.PNG" alt="project2">
-             <div class="project-info">
-               <h3>Moving Button</h3>
-               <p>A playful and interactive webpage where a button moves away when users try to click it, creating a fun challenge. This project demonstrates creative use of JavaScript for animations and dynamic positioning, making for an engaging user experience. Tech Stack: HTML, CSS,JavaScript..</p>
-               <a href="#">View Project</a>
-             </div>
-           </div>
-           <div class="project-card">
-             <img src="climateframed.PNG" alt="project3">
-             <div class="project-info">
-               <h3>ClimateFramed</h3>
-               <p>A project aimed at addressing climate challenges through innovative solutions, possibly utilizing data visualization, environmental tracking, or awareness platforms. Tech Stack: JavaScript, Python,DataAPIs.</p>
-               <a href="#">View Project</a>
-             </div>
-           </div>
-           <div class="project-card">
-             <img src="linkree%20project.PNG" alt="project4">
-             <div class="project-info">
-               <h3>Linktree</h3>
-               <p>A simple, responsive Link Tree-style webpage that allows users to consolidate and organize multiple important links in one place. It features a clean design with clickable buttons for easy navigation to social profiles, websites, and other resources. Tech Stack: HTML, CSS.</p>
-               <a href="#">View Project</a>
-             </div>
-           </div>
-           <div class="project-card">
-             <img src="gradebook%20app.PNG" alt="project5">
-             <div class="project-info">
-               <h3>Gradebook App</h3>
-               <p>The Grade Book app is a student records management system designed to streamline the process of course registration, GPA calculation, and transcript generation. Built using Python, the app allows educators to efficiently track student progress, manage course records, and generate accurate academic transcripts. Its simple file storage system ensures ease of use while maintaining reliable data management for schools and institutions.</p>
-               <a href="#">View Project</a>
-             </div>
-           </div>
-         </div>
-         <button class="prev" onclick="slidePrev()">&#10094;</button>
-         <button class="next" onclick="slideNext()">&#10095;</button>
-       </div>
-      </section>
-
       <section id="experience" class="portfolio-section">
         <h2>Experience</h2>
         <div class="experience-item">
@@ -161,21 +160,27 @@
             <li>Guided and mentored students, fostering a supportive learning environment that encouraged curiosity and growth.</li>
           </ul>
         </div>
-        <div>
+        <div class="experience-item">
           <span>Listing Agent - Coinstore</span>
           <span>Nov 2022-May 2023</span>
-          <p>Sourced cryptocurrency projects for listing on Coinstore platform.</p>
+          <ul>
+            <li>Sourced cryptocurrency projects for listing on Coinstore platform.</li>
+          </ul>
         </div>
       </section>
 
       <section id="education" class="portfolio-section">
         <h2>Education</h2>
-        <h3>Bachelor in Software Engineering</h3>
-        <p>African Leadership University
-          2024-2027</p>
-        <h3>Bachelor in Robotics engineering</h3>
-        <p>Zhejiang University of Science and Technology
-          2020-2021</p>
+        <div class="edu">
+          <h3>Bachelor in Software Engineering</h3>
+          <p>African Leadership University
+            2024-2027</p>
+        </div>
+        <div class="edu">
+          <h3>Bachelor in Robotics engineering</h3>
+          <p>Zhejiang University of Science and Technology
+            2020-2021</p>
+        </div>
       </section>
     </div>
 
@@ -196,7 +201,13 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
+    <div class="social">
+      <a href="#"><i class='bx bxl-twitter'></i></a>
+      <a href="#"><i class='bx bxl-gmail' ></i></a>
+      <a href="#"><i class='bx bxl-linkedin' ></i></a>
+    </div>
+
     <p>&copy; 2024 Akachi. All rights reserved.</p>
   </footer>
 
