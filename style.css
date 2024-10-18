@@ -65,10 +65,10 @@ Variables
 
 body, html{
     transition: opacity 0.5s ease-in-out;
-    width: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 /* Small devices (phones, 320px and up) */
@@ -429,13 +429,13 @@ span{
 .project-card {
     min-width: 100%;
     box-sizing: border-box;
-    max-width: 400px;
+    max-width: 600px;
     width: 100%;
     height: auto;
 }
 
 .project-card img {
-    max-width: 400px;
+    max-width: 600px;
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -446,7 +446,7 @@ span{
     padding: 15px;
     background-color: #f9f9f9;
     border-top: 1px solid #ddd;
-    max-width: 400px;
+    max-width: 600px;
 }
 
 .project-info h3 {
